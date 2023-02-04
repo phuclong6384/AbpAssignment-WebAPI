@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AbpAssignment.Application\AbpAssignment.Application.csproj" />
+    <ProjectReference Include="..\..\src\AbpAssignment.HttpApi.Host\AbpAssignment.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\AbpAssignment.Application.Tests\AbpAssignment.Application.Tests.csproj" />
+  </ItemGroup>
+
+</Project>
